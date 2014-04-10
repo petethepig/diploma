@@ -35,13 +35,13 @@ def EvaluateDiplomas():
 В листинге~\ref{lst:sample01} работают русские буквы. Сильная магия. Однако, работает
 только во включаемых файлах, прямо в \TeX{} нельзя.
 
-% Обратите внимание, что включается не ../src/..., а inc/src/...
-% В Makefile есть соответствующее правило для inc/src/*,
+% Обратите внимание, что включается не ../src/..., а assets/src/...
+% В Makefile есть соответствующее правило для assets/src/*,
 % которое копирует исходные файлы из ../src и конвертирует из UTF-8 в KOI8-R.
 % Кстати, поэтому использовать можно только русские буквы и ASCII,
 % весь остальной UTF-8 вроде CJK и египетских иероглифов -- нельзя.
 
-\lstinputlisting[language=C,caption=Пример (\Code{test.c}),label=lst:sample01]{inc/src/test.c}
+\lstinputlisting[language=C,caption=Пример (\Code{test.c}),label=lst:sample01]{assets/test.c}
 
 % Для вставки реального кода лучше использовать \texttt{\textbackslash lstinputlisting} (который понимает
 % UTF8) и стили \Code{realcode} либо \Code{simplecode} (в зависимости от размера куска).

@@ -1,8 +1,9 @@
-examples
 *.aux
 *.out
 *.gz
 *.toc
 *.blg
+*.bbl
 *.fdb_latexmk
 *.log
+diploma.pdf

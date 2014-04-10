@@ -12,80 +12,78 @@
 
 %стандартные части
 \newcommand\Executors{%список исполнителей
- \chapter*{\CYRS\cyrp\cyri\cyrs\cyro\cyrk~%
-           \cyri\cyrs\cyrp\cyro\cyrl\cyrn\cyri\cyrt\cyre\cyrl\cyre\cyr\cyrishrt}%
+ \chapter*{Список Исполнителей}%
 }
 \newcommand\Referat{%реферат
- \chapter*{\CYRR\cyre\cyrf\cyre\cyrr\cyra\cyrt}%
+ \chapter*{Введение}%
 }
 \addto\captionsrussian{%содержание
  \def\contentsname{%
-  \CYRS\cyro\cyrd\cyre\cyrr\cyrzh\cyra\cyrn\cyri\cyre}%
+  Содержание}%
 }
 \newenvironment{abstract}{%То же самое, только как у белых людей -- Коротков И.
  \Referat
 }{}
 \newcommand\NormRefs{%нормативные ссылки
- \chapter*{\CYRN\cyro\cyrr\cyrm\cyra\cyrt\cyri\cyrv\cyrn\cyrery\cyre~%
-           \cyrs\cyrs\cyrery\cyrl\cyrk\cyri}%
+ \chapter*{Нормативные~%
+           ссылки}%
 }
 \newcommand\Defines{%глоссарий
- \chapter*{\CYRG\cyrl\cyro\cyrs\cyrs\cyra\cyrr\cyri\cyrishrt}%
+ \chapter*{Глоссарий}%
 }
 %\newcommand\Defines{%определения
-% \chapter*{\CYRO\cyrp\cyrr\cyre\cyrd\cyre\cyrl\cyre\cyrn\cyri\cyrya}%
+% \chapter*{Определения}%
 %}
 \newcommand\Abbreviations{%обозначения и сокращения
- \chapter*{\CYRO\cyrb\cyro\cyrz\cyrn\cyra\cyrch\cyre\cyrn\cyri\cyrya~\cyri~%
-           \cyrs\cyro\cyrk\cyrr\cyra\cyrshch\cyre\cyrn\cyri\cyrya}%
+ \chapter*{Обозначения и Сокращения}%
 }
 \newcommand\Introduction{%введение
- \chapter{\CYRV\cyrv\cyre\cyrd\cyre\cyrn\cyri\cyre}%
+ \chapter{Введение}%
 }
 \newcommand\Conclusion{%заключение
- \chapter{\CYRZ\cyra\cyrk\cyrl\cyryu\cyrch\cyre\cyrn\cyri\cyre}%
+ \chapter{Заключение}%
 }
 \addto\captionsrussian{%список использованных источников
  \def\bibname{%
-  \CYRS\cyrp\cyri\cyrs\cyro\cyrk~
-  \cyri\cyrs\cyrp\cyro\cyrl\cyrsftsn\cyrz\cyro\cyrv\cyra\cyrn\cyrn\cyrery\cyrh~
-  \cyri\cyrs\cyrt\cyro\cyrch\cyrn\cyri\cyrk\cyro\cyrv}%
+  Список~
+  использованных~
+  источников}%
 }
 
 %Элементы оформления титульной страницы
-\newcommand\Nir@UdkName{\CYRU\CYRD\CYRK}
+\newcommand\Nir@UdkName{ЮДК}
 
 \newcommand\Nir@No{%
- \No~\cyrg\cyro\cyrs\cyrr\cyre\cyrg\cyri\cyrs\cyrt\cyrr\cyra\cyrc\cyri\cyri%
+ \No~госрегистрации%
 }
 
 \newcommand\Nir@Confirm{
- {\small\CYRU\CYRT\CYRV\CYRE\CYRR\CYRZH\CYRD\CYRA\CYRYU}%
+ {\smallUTVERZHDAYU}%
 }
 
 \newcommand\Nir@InventarNo{
- \CYRI\cyrn\cyrv.~\No
+ Инв.~\No
 }
 
 \newcommand\Nir@Otchet{{%
- \small\CYRO\CYRT\CYRCH\CYRYO\CYRT \\
- \CYRO{} \CYRN\CYRA\CYRU\CYRCH\CYRN\CYRO-%
- \CYRI\CYRS\CYRS\CYRL\CYRE\CYRD\CYRO\CYRV\CYRA\CYRT\CYRE\CYRL\CYRSFTSN\CYRS\CYRK\CYRO\CYRISHRT{} %
- \CYRR\CYRA\CYRB\CYRO\CYRT\CYRE%
+ \smallOTCHYOT \\
+ О{} НАУЧНО-%
+ ИССЛЕДОВАТЕЛЬСКОЙ{} %
+ РАБОТЕ%
 }}
 
 \newcommand\Nir@AnnOtchet{ %отчёт аннотационный!?
 }
 
 \newcommand\Nir@MainBegin{%
- \CYRR\cyru\cyrk\cyro\cyrv\cyro\cyrd\cyri\cyrt\cyre\cyrl\cyrsftsn{} %
- \CYRN\CYRI\CYRR%
+ Руководитель{} %
+ НИР%
 }
 
 \newcommand\Nir@OrgLongName{%
- \CYRP\cyro\cyrl\cyrn\cyro\cyre~
- \cyrn\cyra\cyrz\cyrv\cyra\cyrn\cyri\cyre~
- \cyro\cyrr\cyrg\cyra\cyrn\cyri\cyrz\cyra\cyrc\cyri\cyri%
+ Полное~
+ Название~
+ Организации%
 }
 
 \newcommand\Nir@StageNo{ % номер этапа работ
@@ -98,19 +96,19 @@
 
 
 \newcommand\Nir@BossPost{%
- \CYRK\cyrt\cyro \newline
- \cyru\cyrt\cyrv\cyre\cyrr\cyrzh\cyrd\cyra\cyre\cyrt%
+ Кто \newline
+ утверждает%
 }
 
-\newcommand\Nir@BossName{\CYRF.~\CYRI.~\CYRO}
+\newcommand\Nir@BossName{Ф.И.О}
 \newcommand\Nir@Year{\the\year}
-\newcommand\Nir@Town{\CYRG\cyro\cyrr\cyro\cyrd}
+\newcommand\Nir@Town{Город}
 \newcommand\Nir@ManagerPost{%
- \cyrb\cyro\cyrl\cyrsftsn\cyrsh\cyro\cyrishrt{}
- \cyrn\cyra\cyrch\cyra\cyrl\cyrsftsn\cyrn\cyri\cyrk%
+ Большой{}
+ Начальник%
 }
 
-\newcommand\Nir@ManagerName{\CYRI\cyrv\cyra\cyrn\cyro\cyrv}
+\newcommand\Nir@ManagerName{Иванов}
 
 \newcommand\NirTitle[1]{
  \thispagestyle{empty}
@@ -129,7 +127,7 @@
     \vspace{5mm}
     \Nir@BossPost \newline \newline
     \underline{~~~~~~~~~~~~~~~~~} \Nir@BossName \newline
-    <<\underline{~~~~}>>\underline{~~~~~~~~~~~~~~~~~} \Nir@Year~\cyrg.
+    <<\underline{~~~~}>>\underline{~~~~~~~~~~~~~~~~~} \Nir@Year~г.
   \end{tabular}
   \vfill
 
@@ -139,7 +137,7 @@
   #1
   \vspace{8mm}
 
-\Nir@StageNo~~\Nir@StageTitle 
+\Nir@StageNo~~\Nir@StageTitle
 
 (\Nir@StageType)
 

@@ -1,0 +1,48 @@
+%% Преамбула TeX-файла
+
+% 1. Стиль и язык
+\documentclass[utf8x, 12pt]{G7-32} % Стиль (по умолчанию будет 14pt)
+
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+% Настройки листингов.
+\include{listings.inc}
+% Полезные макросы листингов.
+\include{macros.inc}
+
+\begin{document}
+
+\frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+
+%\include{00-abstract} % Походу это нам не надо
+
+\tableofcontents
+
+%\include{10-defines} % Походу это нам не надо
+%\include{11-abbrev} % Сокращения
+\include{10-intro} % Введение
+
+\mainmatter % это включает нумерацию глав и секций в документе ниже
+
+\include{20-chapter1}
+\include{30-chapter2}
+\include{40-chapter3}
+%\include{50-economics}
+%\include{60-obz}
+
+\backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и заключение
+
+%\include{80-conclusion}
+%\include{81-biblio}
+
+%\appendix   % Тут идут приложения
+
+%\include{90-appendix1}
+%\include{91-appendix2}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

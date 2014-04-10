@@ -4,13 +4,13 @@
 \documentclass[utf8x, 12pt]{G7-32} % Стиль (по умолчанию будет 14pt)
 
 % Остальные стандартные настройки убраны в preamble.inc.tex.
-\include{preamble.inc}
+\include{example/preamble.inc}
 
 % Настройки листингов.
-\include{listings.inc}
+\include{example/listings.inc}
 
 % Полезные макросы листингов.
-\include{macros.inc}
+\include{example/macros.inc}
 
 \begin{document}
 
@@ -23,33 +23,33 @@
 % \nobreakingbeforechapters
 % \breakingbeforechapters
 
-\include{00-abstract}
+\include{example/00-abstract}
 
 \tableofcontents
 
-\include{10-defines}
-\include{11-abbrev}
+\include{example/10-defines}
+\include{example/11-abbrev}
 
-\include{12-intro}
+\include{example/12-intro}
 
 \mainmatter % это включает нумерацию глав и секций в документе ниже
 
-\include{20-analysis}
-\include{30-design}
-\include{40-impl}
-\include{50-research}
+\include{example/20-analysis}
+\include{example/30-design}
+\include{example/40-impl}
+\include{example/50-research}
 
 \backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
             %% заключение
 
-\include{80-conclusion}
+\include{example/80-conclusion}
 
-\include{81-biblio}
+\include{example/81-biblio}
 
 \appendix   % Тут идут приложения
 
-\include{90-appendix1}
-\include{91-appendix2}
+\include{example/90-appendix1}
+\include{example/91-appendix2}
 
 \end{document}
 

@@ -307,7 +307,7 @@
 
 %  ссылка на нумерованное перечисление
 \newcommand\pref[2]{%
- \cyrp\cyre\cyrr\cyre\cyrch\cyri\cyrs\cyrl\cyre\cyrn\cyri\cyre~\ref{#2})~\ref{#1}}
+ перечисление~\ref{#2})~\ref{#1}}
 
 %перечисление типа abbreviation - для списка сокращения
 %заменено на description для совместимости -- Коротков И.
@@ -338,7 +338,7 @@
 \newlength\Gost@@EqRemLen
 \newenvironment{eqrem}{%
  \begin{tabular}{p{\Gost@@EqRemLen}p{\Gost@EqRemLen}}
-  \cyrg\cyrd\cyre
+  где
 }{
  \end{tabular}
 }
@@ -402,7 +402,7 @@
 \newenvironment{figure*}{\@dblfloat{figure}}{\end@dblfloat}
 
 %  Подпись к рисунку
-\addto\captionsrussian{\def\figurename{{\cyr\CYRR\cyri\cyrs\cyru\cyrn\cyro\cyrk}}}
+\addto\captionsrussian{\def\figurename{{Рисунок}}}
 
 % ... допускается нумерация рисунков в пределах раздела
 \newcommand\PicInChapter{%
@@ -418,7 +418,7 @@
 \newenvironment{table*}{\@dblfloat{table}}{\end@dblfloat}
 
 %  Подпись к таблице
-\addto\captionsrussian{\def\tablename{{\cyr\CYRT\cyra\cyrb\cyrl\cyri\cyrc\cyra}}}
+\addto\captionsrussian{\def\tablename{{Таблица}}}
 
 % ... допускается нумерация таблиц в пределах раздела
 
@@ -449,9 +449,10 @@
  \setcounter{secnumdepth}{4}
  \setcounter{chapter}{0}%
  \EqInChapter\PicInChapter\TableInChapter%
- \gdef\@chapapp{\appendixname}%
- \gdef\thechapter{\@Asbuk\c@chapter}%
- \renewcommand\Gost@ChapterStyle{\cyr\CYRP\cyrr\cyri\cyrl\cyro\cyrzh\cyre\cyrn\cyri\cyre~\Gost@MainChapterStyle}%
+ % Эта фигня не работат почему то
+ %\gdef\@chapapp{\appendixname}%
+ %\gdef\thechapter{\@Asbuk\c@chapter}%
+ \renewcommand\Gost@ChapterStyle{Приложение~\Gost@MainChapterStyle}%
  \setlength\Gost@ChapterIndent{0mm}%
 }
 
@@ -497,7 +498,7 @@
  \makeatletter%
   \setlength\Gost@EqRemLen{\textwidth}%
   \addtolength\Gost@EqRemLen{-10mm}%
-  \settowidth\Gost@@EqRemLen{\cyrg\cyrd\cyre}%
+  \settowidth\Gost@@EqRemLen{gde}%
   \addtolength\Gost@EqRemLen{-\Gost@@EqRemLen}%
  \makeatother%
 }
