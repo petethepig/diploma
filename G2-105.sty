@@ -240,8 +240,6 @@
 %  в оглавлении- тоже могут быть все.
 \setcounter{tocdepth}{4} %% virens: обычно только первый подраздел
 %  перенос в словах-с-дефисом
-\lccode`\-=`\-
-\defaulthyphenchar=127
 
 % Импорт необходимых пакетов
 \if@usehyperref
@@ -254,8 +252,6 @@
 % \RequirePackage[T2A]{fontenc}
 \RequirePackage{cmap} %теперь из pdf можно копипастить русский текст
 \RequirePackage{ucs} %теперь из pdf можно копипастить русский текст
-\RequirePackage[T2A]{fontenc} % T1 по этой же пичине, иначе акробату плохо.
-\RequirePackage[\Gost@encoding]{inputenc}
 \RequirePackage[english,russian]{babel}
 \RequirePackage{flafter}
 

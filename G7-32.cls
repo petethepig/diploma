@@ -37,7 +37,6 @@
 % amssymb     - для русских "меньше или равно" "больше или равно"
 % Используются группа пакетов extsizes.
 
-\NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{G7-32}[2003/07/01 v1.0 Non Standard LaTeX document class]
 
 \RequirePackage{G2-105}
